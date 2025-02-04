@@ -1,0 +1,9 @@
+# Create a new folder and also make a new file like 'file_encryptor.py' after that following step by step.
+===========================================
+rm -rf env
+python3 -m venv env
+source env/bin/activate
+pip install cryptography tkinterdnd2
+python3 file_encryptor.py
+python3 -c "from cryptography.fernet import Fernet; open('secret.key', 'wb').write(Fernet.generate_key())"
+python3 file_encryptor.py
