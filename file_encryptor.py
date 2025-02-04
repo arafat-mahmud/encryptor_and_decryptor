@@ -1,7 +1,7 @@
 import os
 import tkinter as tk
 from tkinter import filedialog, messagebox
-from cryptography.fernet import Fernet
+from cryptography.fernet import Fernet # type: ignore
 
 # Generate and save a key (Run only once)
 def generate_key():
